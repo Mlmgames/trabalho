@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            font-family: 'Courier New', Courier, monospace;
+background-color: darkgray;
+            border-radius: 10px;
+          text-align: center;
+          align-items: center;
+            padding: 10px;
+        }
+            body{display: flex;}
+            
+
+        img{
+            height: 500px;
+            width: auto;
+
+            
+        }
+        h1{text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Teste flex blox</h1>
+ <section>
+        <button id="moveButton" onclick="moveElement()">Mover Elemento</button>
+        <div id="movableElement">   <img src="https://static3.tcdn.com.br/img/img_prod/460977/teste_100485_1_cbc226c7d23a19c784fb4752ffe61337.png" alt=""></div>
+    </section>
+
+ <script>
+        function moveElement() {
+            const element = document.getElementById('movableElement');
+            element.style.transform = 'translateX(200px)';
+        }
+    </script>
+ 
+</body>
+</html>
